@@ -1,0 +1,17 @@
+C:\Users\ESEN\Desktop\Prog\GestEmpresa_Dinis\GestEmpresa_Dinis\bin\Debug\net8.0-windows\GestEmpresa_Dinis.exe
+C:\Users\ESEN\Desktop\Prog\GestEmpresa_Dinis\GestEmpresa_Dinis\bin\Debug\net8.0-windows\GestEmpresa_Dinis.deps.json
+C:\Users\ESEN\Desktop\Prog\GestEmpresa_Dinis\GestEmpresa_Dinis\bin\Debug\net8.0-windows\GestEmpresa_Dinis.runtimeconfig.json
+C:\Users\ESEN\Desktop\Prog\GestEmpresa_Dinis\GestEmpresa_Dinis\bin\Debug\net8.0-windows\GestEmpresa_Dinis.dll
+C:\Users\ESEN\Desktop\Prog\GestEmpresa_Dinis\GestEmpresa_Dinis\bin\Debug\net8.0-windows\GestEmpresa_Dinis.pdb
+C:\Users\ESEN\Desktop\Prog\GestEmpresa_Dinis\GestEmpresa_Dinis\obj\Debug\net8.0-windows\GestEmpresa_Dinis.frmPrincipal.resources
+C:\Users\ESEN\Desktop\Prog\GestEmpresa_Dinis\GestEmpresa_Dinis\obj\Debug\net8.0-windows\GestEmpresa_Dinis.csproj.GenerateResource.cache
+C:\Users\ESEN\Desktop\Prog\GestEmpresa_Dinis\GestEmpresa_Dinis\obj\Debug\net8.0-windows\GestEmpresa_Dinis.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ESEN\Desktop\Prog\GestEmpresa_Dinis\GestEmpresa_Dinis\obj\Debug\net8.0-windows\GestEmpresa_Dinis.AssemblyInfoInputs.cache
+C:\Users\ESEN\Desktop\Prog\GestEmpresa_Dinis\GestEmpresa_Dinis\obj\Debug\net8.0-windows\GestEmpresa_Dinis.AssemblyInfo.cs
+C:\Users\ESEN\Desktop\Prog\GestEmpresa_Dinis\GestEmpresa_Dinis\obj\Debug\net8.0-windows\GestEmpresa_Dinis.csproj.CoreCompileInputs.cache
+C:\Users\ESEN\Desktop\Prog\GestEmpresa_Dinis\GestEmpresa_Dinis\obj\Debug\net8.0-windows\GestEmpresa_Dinis.dll
+C:\Users\ESEN\Desktop\Prog\GestEmpresa_Dinis\GestEmpresa_Dinis\obj\Debug\net8.0-windows\refint\GestEmpresa_Dinis.dll
+C:\Users\ESEN\Desktop\Prog\GestEmpresa_Dinis\GestEmpresa_Dinis\obj\Debug\net8.0-windows\GestEmpresa_Dinis.pdb
+C:\Users\ESEN\Desktop\Prog\GestEmpresa_Dinis\GestEmpresa_Dinis\obj\Debug\net8.0-windows\GestEmpresa_Dinis.genruntimeconfig.cache
+C:\Users\ESEN\Desktop\Prog\GestEmpresa_Dinis\GestEmpresa_Dinis\obj\Debug\net8.0-windows\ref\GestEmpresa_Dinis.dll
+C:\Users\ESEN\Desktop\Prog\GestEmpresa_Dinis\GestEmpresa_Dinis\obj\Debug\net8.0-windows\GestEmpresa_Dinis.frmEmpregado.resources
