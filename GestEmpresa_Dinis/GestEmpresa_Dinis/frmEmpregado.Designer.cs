@@ -32,7 +32,7 @@
             txtNome = new TextBox();
             dtpDataNasc = new DateTimePicker();
             chkEditar = new CheckBox();
-            gpbMorada = new GroupBox();
+            grpMorada = new GroupBox();
             txtLocalidade = new TextBox();
             txtCodPostal = new TextBox();
             txtRua = new TextBox();
@@ -46,12 +46,16 @@
             txtTelefone = new TextBox();
             lblTelefone = new Label();
             lblDataNasc = new Label();
+            btnCancel = new Button();
+            btnOk = new Button();
+            pnlProgramador = new Panel();
+            txtEspecialidade = new TextBox();
+            lblEspecialidade = new Label();
             pnlAnalista = new Panel();
             txtProjeto = new TextBox();
             lblProjeto = new Label();
-            btnCancelar = new Button();
-            btnOk = new Button();
-            gpbMorada.SuspendLayout();
+            grpMorada.SuspendLayout();
+            pnlProgramador.SuspendLayout();
             pnlAnalista.SuspendLayout();
             SuspendLayout();
             // 
@@ -90,19 +94,20 @@
             chkEditar.TabIndex = 3;
             chkEditar.Text = "Editar";
             chkEditar.UseVisualStyleBackColor = true;
+            chkEditar.CheckedChanged += chkEditar_CheckedChanged;
             // 
-            // gpbMorada
+            // grpMorada
             // 
-            gpbMorada.Controls.Add(txtLocalidade);
-            gpbMorada.Controls.Add(txtCodPostal);
-            gpbMorada.Controls.Add(txtRua);
-            gpbMorada.Font = new Font("Segoe UI", 10F);
-            gpbMorada.Location = new Point(27, 183);
-            gpbMorada.Name = "gpbMorada";
-            gpbMorada.Size = new Size(528, 107);
-            gpbMorada.TabIndex = 4;
-            gpbMorada.TabStop = false;
-            gpbMorada.Text = "Morada";
+            grpMorada.Controls.Add(txtLocalidade);
+            grpMorada.Controls.Add(txtCodPostal);
+            grpMorada.Controls.Add(txtRua);
+            grpMorada.Font = new Font("Segoe UI", 10F);
+            grpMorada.Location = new Point(27, 183);
+            grpMorada.Name = "grpMorada";
+            grpMorada.Size = new Size(528, 107);
+            grpMorada.TabIndex = 4;
+            grpMorada.TabStop = false;
+            grpMorada.Text = "Morada";
             // 
             // txtLocalidade
             // 
@@ -132,6 +137,7 @@
             cmbCargo.Name = "cmbCargo";
             cmbCargo.Size = new Size(180, 23);
             cmbCargo.TabIndex = 5;
+            cmbCargo.SelectedIndexChanged += cmbCargo_SelectedIndexChanged;
             // 
             // lblNome
             // 
@@ -204,6 +210,53 @@
             lblDataNasc.TabIndex = 14;
             lblDataNasc.Text = "Data de Nascimento";
             // 
+            // btnCancel
+            // 
+            btnCancel.Font = new Font("Segoe UI", 10F);
+            btnCancel.Location = new Point(339, 372);
+            btnCancel.Name = "btnCancel";
+            btnCancel.Size = new Size(100, 30);
+            btnCancel.TabIndex = 16;
+            btnCancel.Text = "&Cancelar";
+            btnCancel.UseVisualStyleBackColor = true;
+            // 
+            // btnOk
+            // 
+            btnOk.Font = new Font("Segoe UI", 10F);
+            btnOk.Location = new Point(455, 372);
+            btnOk.Name = "btnOk";
+            btnOk.Size = new Size(100, 30);
+            btnOk.TabIndex = 17;
+            btnOk.Text = "&Ok";
+            btnOk.UseVisualStyleBackColor = true;
+            btnOk.Click += btnOk_Click;
+            // 
+            // pnlProgramador
+            // 
+            pnlProgramador.Controls.Add(txtEspecialidade);
+            pnlProgramador.Controls.Add(lblEspecialidade);
+            pnlProgramador.Location = new Point(27, 310);
+            pnlProgramador.Name = "pnlProgramador";
+            pnlProgramador.Size = new Size(528, 48);
+            pnlProgramador.TabIndex = 17;
+            // 
+            // txtEspecialidade
+            // 
+            txtEspecialidade.Location = new Point(105, 11);
+            txtEspecialidade.Name = "txtEspecialidade";
+            txtEspecialidade.Size = new Size(405, 23);
+            txtEspecialidade.TabIndex = 12;
+            // 
+            // lblEspecialidade
+            // 
+            lblEspecialidade.AutoSize = true;
+            lblEspecialidade.Font = new Font("Segoe UI", 10F);
+            lblEspecialidade.Location = new Point(10, 12);
+            lblEspecialidade.Name = "lblEspecialidade";
+            lblEspecialidade.Size = new Size(89, 19);
+            lblEspecialidade.TabIndex = 8;
+            lblEspecialidade.Text = "Especialidade";
+            // 
             // pnlAnalista
             // 
             pnlAnalista.Controls.Add(txtProjeto);
@@ -211,7 +264,7 @@
             pnlAnalista.Location = new Point(27, 310);
             pnlAnalista.Name = "pnlAnalista";
             pnlAnalista.Size = new Size(528, 48);
-            pnlAnalista.TabIndex = 15;
+            pnlAnalista.TabIndex = 16;
             // 
             // txtProjeto
             // 
@@ -230,34 +283,15 @@
             lblProjeto.TabIndex = 8;
             lblProjeto.Text = "Projeto";
             // 
-            // btnCancelar
-            // 
-            btnCancelar.Font = new Font("Segoe UI", 10F);
-            btnCancelar.Location = new Point(339, 372);
-            btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new Size(100, 30);
-            btnCancelar.TabIndex = 16;
-            btnCancelar.Text = "&Cancelar";
-            btnCancelar.UseVisualStyleBackColor = true;
-            // 
-            // btnOk
-            // 
-            btnOk.Font = new Font("Segoe UI", 10F);
-            btnOk.Location = new Point(455, 372);
-            btnOk.Name = "btnOk";
-            btnOk.Size = new Size(100, 30);
-            btnOk.TabIndex = 17;
-            btnOk.Text = "&Ok";
-            btnOk.UseVisualStyleBackColor = true;
-            // 
             // frmEmpregado
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(584, 411);
-            Controls.Add(btnOk);
-            Controls.Add(btnCancelar);
             Controls.Add(pnlAnalista);
+            Controls.Add(pnlProgramador);
+            Controls.Add(btnOk);
+            Controls.Add(btnCancel);
             Controls.Add(lblDataNasc);
             Controls.Add(txtTelefone);
             Controls.Add(lblTelefone);
@@ -267,7 +301,7 @@
             Controls.Add(lblEmail);
             Controls.Add(lblNome);
             Controls.Add(cmbCargo);
-            Controls.Add(gpbMorada);
+            Controls.Add(grpMorada);
             Controls.Add(chkEditar);
             Controls.Add(dtpDataNasc);
             Controls.Add(txtNome);
@@ -275,8 +309,11 @@
             Name = "frmEmpregado";
             ShowIcon = false;
             Text = "Empregado";
-            gpbMorada.ResumeLayout(false);
-            gpbMorada.PerformLayout();
+            Load += frmEmpregado_Load;
+            grpMorada.ResumeLayout(false);
+            grpMorada.PerformLayout();
+            pnlProgramador.ResumeLayout(false);
+            pnlProgramador.PerformLayout();
             pnlAnalista.ResumeLayout(false);
             pnlAnalista.PerformLayout();
             ResumeLayout(false);
@@ -289,7 +326,7 @@
         private TextBox txtNome;
         private DateTimePicker dtpDataNasc;
         private CheckBox chkEditar;
-        private GroupBox gpbMorada;
+        private GroupBox grpMorada;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private ComboBox cmbCargo;
         private Label lblNome;
@@ -300,13 +337,16 @@
         private TextBox txtTelefone;
         private Label lblTelefone;
         private Label lblDataNasc;
-        private Panel pnlAnalista;
         private TextBox txtLocalidade;
         private TextBox txtCodPostal;
         private TextBox txtRua;
+        private Button btnCancel;
+        private Button btnOk;
+        private Panel pnlProgramador;
+        private TextBox txtEspecialidade;
+        private Label lblEspecialidade;
+        private Panel pnlAnalista;
         private TextBox txtProjeto;
         private Label lblProjeto;
-        private Button btnCancelar;
-        private Button btnOk;
     }
 }

@@ -10,7 +10,7 @@ namespace GestEmpresa_Dinis
     {
         public string Projeto { get; set; }
 
-        public Analista(string projeto, string nome, DateTime datNasc, string email, int telefone, Morada moradaAtual, string rua, string localidade, string codPostal): base(nome, datNasc, email, telefone, moradaAtual)
+        public Analista(string projeto, string nome, DateTime datNasc, string email, string telefone, Morada moradaAtual): base(nome, datNasc, email, telefone, moradaAtual)
         {
             Projeto = projeto;
         }

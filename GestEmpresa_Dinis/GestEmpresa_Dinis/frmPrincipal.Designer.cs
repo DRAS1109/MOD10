@@ -28,21 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            dgbDados = new DataGridView();
+            dgvDados = new DataGridView();
             btnEditar = new Button();
             btnNovo = new Button();
             btnRemover = new Button();
             btnSair = new Button();
-            ((System.ComponentModel.ISupportInitialize)dgbDados).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvDados).BeginInit();
             SuspendLayout();
             // 
-            // dgbDados
+            // dgvDados
             // 
-            dgbDados.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgbDados.Location = new Point(12, 12);
-            dgbDados.Name = "dgbDados";
-            dgbDados.Size = new Size(646, 406);
-            dgbDados.TabIndex = 0;
+            dgvDados.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvDados.Location = new Point(12, 12);
+            dgvDados.Name = "dgvDados";
+            dgvDados.Size = new Size(646, 406);
+            dgvDados.TabIndex = 0;
             // 
             // btnEditar
             // 
@@ -52,6 +52,7 @@
             btnEditar.TabIndex = 1;
             btnEditar.Text = "&Ver/Editar";
             btnEditar.UseVisualStyleBackColor = true;
+            btnEditar.Click += btnEditar_Click;
             // 
             // btnNovo
             // 
@@ -61,6 +62,7 @@
             btnNovo.TabIndex = 2;
             btnNovo.Text = "&Novo";
             btnNovo.UseVisualStyleBackColor = true;
+            btnNovo.Click += btnNovo_Click;
             // 
             // btnRemover
             // 
@@ -79,6 +81,7 @@
             btnSair.TabIndex = 4;
             btnSair.Text = "&Sair";
             btnSair.UseVisualStyleBackColor = true;
+            btnSair.Click += btnSair_Click;
             // 
             // frmPrincipal
             // 
@@ -89,17 +92,18 @@
             Controls.Add(btnRemover);
             Controls.Add(btnNovo);
             Controls.Add(btnEditar);
-            Controls.Add(dgbDados);
+            Controls.Add(dgvDados);
             Name = "frmPrincipal";
             ShowIcon = false;
             Text = "GestEmpresa";
-            ((System.ComponentModel.ISupportInitialize)dgbDados).EndInit();
+            Load += frmPrincipal_Load;
+            ((System.ComponentModel.ISupportInitialize)dgvDados).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private DataGridView dgbDados;
+        private DataGridView dgvDados;
         private Button btnEditar;
         private Button btnNovo;
         private Button btnRemover;

@@ -6,7 +6,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
-namespace GestEmpresa_Dinis
+    namespace GestEmpresa_Dinis
 {
     public class Empregado
     {
@@ -67,7 +67,7 @@ namespace GestEmpresa_Dinis
                     nome = value.Trim(); //Retira os espaços no inicio e no final do texto
 
                 else
-                    nome = "Sem Nome";
+                    nome = "‎";
             }
         }
 
@@ -132,7 +132,7 @@ namespace GestEmpresa_Dinis
             DatNasc = datNasc;
             MoradaAtual = moradaAtual;
             eMail = email;
-            Telefone = telefone; //Inacabado 
+            Telefone = telefone;
             ID = ++autoID;
         }
 
@@ -241,6 +241,17 @@ namespace GestEmpresa_Dinis
             // Regex explicada abaixo
             string pattern = @"^\+?\s*(?:\(\d+\)\s*)?[0-9]+(?:[ -]?[0-9]+)*$";
             return Regex.IsMatch(telefone.Trim(), pattern);
+        }
+
+        public object Clone()
+        {
+            Empregado empregadoClone = (Empregado)MemberwiseClone();
+
+            // Cria uma cópia profunda do objeto Morada
+            empregadoClone.MoradaAtual = new Morada(
+                MoradaAtual.Rua, MoradaAtual.localidade, MoradaAtual.CodPostal);
+
+            return empregadoClone;
         }
     }
 }

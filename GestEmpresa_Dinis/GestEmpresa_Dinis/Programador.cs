@@ -10,7 +10,7 @@ namespace GestEmpresa_Dinis
     {
         public string Especialidade { get; set; }
 
-        public Programador(string especialidade, string nome, DateTime datNasc, string email, int telefone, Morada moradaAtual, string rua, string localidade, string codPostal) : base(nome, datNasc, email, telefone, moradaAtual)
+        public Programador(string especialidade, string nome, DateTime datNasc, string email, string telefone, Morada moradaAtual) : base(nome, datNasc, email, telefone, moradaAtual)
         {
             Especialidade = especialidade;
         }
